@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Code">
+      <UniqueIdentifier>{01989de1-0d6f-4bbc-b6df-1ff54734c660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{0e7fb44c-9774-46c5-ba31-3a28762abdfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Common">
+      <UniqueIdentifier>{1c9f7d78-558d-4c5e-9d54-3fdd02a34ac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Utility">
+      <UniqueIdentifier>{8d00d77a-7617-4d38-9036-f9db7e0d3403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Configuration">
+      <UniqueIdentifier>{60b8f4dc-c98c-4836-bf8b-53e16cc37a00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
+      <Filter>Code\Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Code\Common\datatypes.h">
+      <Filter>Code\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\PosixInterface.h">
+      <Filter>Code\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\..\Resource\Configuration\TelemSIM.xml">
+      <Filter>Resource\Configuration</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Resource\Configuration\TelemSIM_logsconf_kvfile.conf">
+      <Filter>Resource\Configuration</Filter>
+    </None>
+  </ItemGroup>
+</Project>
