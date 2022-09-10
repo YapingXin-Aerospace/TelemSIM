@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Code">
+      <UniqueIdentifier>{00dc9744-0ee3-4345-83f1-cc296f36f584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{383fd689-bff1-4a18-9860-ec627392425f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Common">
+      <UniqueIdentifier>{8257d9c4-c947-4704-a2f1-91e10a63d475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Utility">
+      <UniqueIdentifier>{378f3b87-26cf-4415-bade-3914ce80a3cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TelemSIM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
