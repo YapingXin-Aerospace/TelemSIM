@@ -18,6 +18,7 @@ I've written a number of simulation programs in C, and I always ended up writing
 ### Advantages
 
 * Cross-platform supported.
+* Configrable.
 
 ### Supported platforms
 
