@@ -13,6 +13,9 @@
     <Filter Include="Code\Utility">
       <UniqueIdentifier>{378f3b87-26cf-4415-bade-3914ce80a3cd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource\Configuration">
+      <UniqueIdentifier>{4bacd919-beb2-4947-8af5-296a84709bf6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -26,5 +29,13 @@
     <ClInclude Include="..\..\..\..\..\Code\Common\PosixInterface.h">
       <Filter>Code\Common</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\..\..\..\..\Resource\Configuration\TelemSIM.xml">
+      <Filter>Resource\Configuration</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\..\..\Resource\Configuration\TelemSIM_logsconf_kvfile.conf">
+      <Filter>Resource\Configuration</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>

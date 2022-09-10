@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Configuration>
+    <Files>
+        <TelemetrySourceDB File="C:\Service\TMSrcImport\DataCollation\TTC_TMSrc_Collation.bin" />
+        <TMResultDumpFolder Dir="C:\Service\TMSrcImport\Dump" />
+    </Files>
+</Configuration>
