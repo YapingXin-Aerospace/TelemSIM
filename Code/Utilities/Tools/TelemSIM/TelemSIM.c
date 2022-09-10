@@ -7,6 +7,10 @@
 #include "Common/datatypes.h"
 #include "Common/PosixInterface.h"
 
+#if defined (_DEBUG) && defined (_WIN32)
+#include <vld.h>
+#endif // _DEBUG && _WIN32
+
 
 int main(int argc, char* argv[])
 {
