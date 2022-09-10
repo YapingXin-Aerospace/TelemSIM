@@ -131,30 +131,38 @@
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x86'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
-      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Resource/Configuration</DestinationFolders>
-      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Resource/Configuration</DestinationFolders>
-      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Resource/Configuration</DestinationFolders>
-      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Resource/Configuration</DestinationFolders>
-      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">Resource/Configuration</DestinationFolders>
-      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x86'">Resource/Configuration</DestinationFolders>
-      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resource/Configuration</DestinationFolders>
-      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Resource/Configuration</DestinationFolders>
-      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">%(Filename)%(Extension)</DestinationFileName>
-      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">%(Filename)%(Extension)</DestinationFileName>
-      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">%(Filename)%(Extension)</DestinationFileName>
-      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">%(Filename)%(Extension)</DestinationFileName>
-      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">%(Filename)%(Extension)</DestinationFileName>
-      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x86'">%(Filename)%(Extension)</DestinationFileName>
-      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)%(Extension)</DestinationFileName>
-      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename)%(Extension)</DestinationFileName>
-      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(RemoteOutRelDir)</RootFolder>
-      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(RemoteOutRelDir)</RootFolder>
-      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(RemoteOutRelDir)</RootFolder>
-      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(RemoteOutRelDir)</RootFolder>
-      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">$(RemoteOutRelDir)</RootFolder>
-      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Release|x86'">$(RemoteOutRelDir)</RootFolder>
-      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RemoteOutRelDir)</RootFolder>
-      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(RemoteOutRelDir)</RootFolder>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+      </DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+      </DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+      </DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+      </DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+      </DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+      </DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </DestinationFolders>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">TelemSIM.xml</DestinationFileName>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">TelemSIM.xml</DestinationFileName>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">TelemSIM.xml</DestinationFileName>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">TelemSIM.xml</DestinationFileName>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">TelemSIM.xml</DestinationFileName>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x86'">TelemSIM.xml</DestinationFileName>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TelemSIM.xml</DestinationFileName>
+      <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TelemSIM.xml</DestinationFileName>
+      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(RemoteDeployDir)</RootFolder>
+      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(RemoteDeployDir)</RootFolder>
+      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(RemoteDeployDir)</RootFolder>
+      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(RemoteDeployDir)</RootFolder>
+      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">$(RemoteDeployDir)</RootFolder>
+      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Release|x86'">$(RemoteDeployDir)</RootFolder>
+      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RemoteDeployDir)</RootFolder>
+      <RootFolder Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(RemoteDeployDir)</RootFolder>
     </CopyFileToFolders>
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +192,19 @@
       <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename)%(Extension)</DestinationFileName>
       <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)/Resource/Configuration</DestinationFolders>
       <DestinationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename)%(Extension)</DestinationFileName>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\..\..\..\..\Resource\Doc\iLog3.md">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">true</DeploymentContent>
+      <FileType>Document</FileType>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x86'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
     </CopyFileToFolders>
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">

@@ -37,5 +37,8 @@
     <CopyFileToFolders Include="..\..\..\..\..\Resource\Configuration\TelemSIM_logsconf_kvfile.conf">
       <Filter>Resource\Configuration</Filter>
     </CopyFileToFolders>
+    <CopyFileToFolders Include="..\..\..\..\..\Resource\Doc\iLog3.md">
+      <Filter>Resource\Configuration</Filter>
+    </CopyFileToFolders>
   </ItemGroup>
 </Project>
