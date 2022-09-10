@@ -137,6 +137,12 @@
     <ClInclude Include="..\..\..\..\..\Code\Common\datatypes.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\PosixInterface.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\..\Resource\Configuration\TelemSIM.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Resource\Configuration\TelemSIM_logsconf_kvfile.conf" />
+  </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
