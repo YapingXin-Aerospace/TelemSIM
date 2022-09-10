@@ -54,3 +54,6 @@ dkms.conf
 /Build/MSVC/Win32/Output
 /Build/MSVC/Win32/IntDir
 /Build/MSVC/Linux/Tools/TelemSIM/TelemSIM.vcxproj.user
+/Build/MSVC/Linux/IntDir
+/Build/MSVC/Linux/Output
+/Build/MSVC/.vs
