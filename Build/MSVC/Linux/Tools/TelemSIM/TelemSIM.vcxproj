@@ -86,49 +86,49 @@
     <OutDir>$(SolutionDir)Linux\Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Linux\IntDir\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <RemoteCopySourceMethod>rsync</RemoteCopySourceMethod>
-    <AdditionalSourcesToCopyMapping>$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <AdditionalSourcesToCopyMapping>../../../../../Resource/Configuration/TelemSIM.xml:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM.xml;../../../../../Resource/Configuration/TelemSIM_logsconf_kvfile.conf:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM_logsconf_kvfile.conf;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <OutDir>$(SolutionDir)Linux\Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Linux\IntDir\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <RemoteCopySourceMethod>rsync</RemoteCopySourceMethod>
-    <AdditionalSourcesToCopyMapping>$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <AdditionalSourcesToCopyMapping>../../../../../Resource/Configuration/TelemSIM.xml:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM.xml;../../../../../Resource/Configuration/TelemSIM_logsconf_kvfile.conf:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM_logsconf_kvfile.conf;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <OutDir>$(SolutionDir)Linux\Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Linux\IntDir\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <RemoteCopySourceMethod>rsync</RemoteCopySourceMethod>
-    <AdditionalSourcesToCopyMapping>$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <AdditionalSourcesToCopyMapping>../../../../../Resource/Configuration/TelemSIM.xml:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM.xml;../../../../../Resource/Configuration/TelemSIM_logsconf_kvfile.conf:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM_logsconf_kvfile.conf;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <OutDir>$(SolutionDir)Linux\Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Linux\IntDir\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <RemoteCopySourceMethod>rsync</RemoteCopySourceMethod>
-    <AdditionalSourcesToCopyMapping>$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <AdditionalSourcesToCopyMapping>../../../../../Resource/Configuration/TelemSIM.xml:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM.xml;../../../../../Resource/Configuration/TelemSIM_logsconf_kvfile.conf:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM_logsconf_kvfile.conf;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)Linux\Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Linux\IntDir\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <RemoteCopySourceMethod>rsync</RemoteCopySourceMethod>
-    <AdditionalSourcesToCopyMapping>$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <AdditionalSourcesToCopyMapping>../../../../../Resource/Configuration/TelemSIM.xml:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM.xml;../../../../../Resource/Configuration/TelemSIM_logsconf_kvfile.conf:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM_logsconf_kvfile.conf;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)Linux\Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Linux\IntDir\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <RemoteCopySourceMethod>rsync</RemoteCopySourceMethod>
-    <AdditionalSourcesToCopyMapping>$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <AdditionalSourcesToCopyMapping>../../../../../Resource/Configuration/TelemSIM.xml:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM.xml;../../../../../Resource/Configuration/TelemSIM_logsconf_kvfile.conf:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM_logsconf_kvfile.conf;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <OutDir>$(SolutionDir)Linux\Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Linux\IntDir\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <RemoteCopySourceMethod>rsync</RemoteCopySourceMethod>
-    <AdditionalSourcesToCopyMapping>$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <AdditionalSourcesToCopyMapping>../../../../../Resource/Configuration/TelemSIM.xml:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM.xml;../../../../../Resource/Configuration/TelemSIM_logsconf_kvfile.conf:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM_logsconf_kvfile.conf;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <OutDir>$(SolutionDir)Linux\Output\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)Linux\IntDir\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <RemoteCopySourceMethod>rsync</RemoteCopySourceMethod>
-    <AdditionalSourcesToCopyMapping>$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    <AdditionalSourcesToCopyMapping>../../../../../Resource/Configuration/TelemSIM.xml:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM.xml;../../../../../Resource/Configuration/TelemSIM_logsconf_kvfile.conf:=$(RemoteRootDir)/$(RemoteOutRelDir)/Resource/Configuration/TelemSIM_logsconf_kvfile.conf;$(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c" />
