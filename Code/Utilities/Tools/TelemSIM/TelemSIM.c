@@ -16,13 +16,29 @@ int main(int argc, char* argv[])
 {
     HResult retcode = HResult_OK;
 
-    if (retcode == HResult_OK)
+    retcode = service_setup(argc, argv);
+    if (retcode != HResult_OK)
+    {
+        printf("[ERROR] service_setup() failed.\n");
+        goto EXIT;
+    }
+
+    retcode = service_start();
+    if (retcode != HResult_OK)
+    {
+        printf("[ERROR] service_start() failed.\n");
+        goto EXIT;
+    }
+
+    retcode = service_stop();
+    if (retcode != HResult_OK)
     {
         printf("[ERROR] service_stop() failed.\n");
         goto EXIT;
     }
 
 EXIT:
+    service_cleanup();
     return EXIT_SUCCESS;
 }
 

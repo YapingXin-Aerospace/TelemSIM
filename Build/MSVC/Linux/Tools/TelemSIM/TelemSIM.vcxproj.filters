@@ -27,6 +27,9 @@
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Service.c">
       <Filter>Code\Utility</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\common_functions.c">
+      <Filter>Code\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Code\Common\datatypes.h">
@@ -40,6 +43,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Service.h">
       <Filter>Code\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\common_functions.h">
+      <Filter>Code\Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
