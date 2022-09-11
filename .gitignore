@@ -59,3 +59,4 @@ dkms.conf
 /Build/MSVC/.vs
 /Build/MSVC/Win32/LibDev/iLog3/iLog3.vcxproj.user
 /Build/MSVC/Linux/LibDev/iLog3/iLog3.vcxproj.user
+/Build/MSVC/Win32/LibDev/Mini-XML-Static/Mini-XML-Static.vcxproj.user

@@ -154,7 +154,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -162,14 +162,14 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -177,14 +177,14 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -192,14 +192,14 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -207,14 +207,14 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -222,14 +222,14 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -237,14 +237,14 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -252,14 +252,14 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -267,7 +267,7 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
