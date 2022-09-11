@@ -58,3 +58,4 @@ dkms.conf
 /Build/MSVC/Linux/Output
 /Build/MSVC/.vs
 /Build/MSVC/Win32/LibDev/iLog3/iLog3.vcxproj.user
+/Build/MSVC/Linux/LibDev/iLog3/iLog3.vcxproj.user

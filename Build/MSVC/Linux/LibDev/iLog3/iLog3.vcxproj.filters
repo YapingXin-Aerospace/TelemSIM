@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Code">
+      <UniqueIdentifier>{27a3b3d3-0dd6-4c1e-8a0c-27f998ea80e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\iLog3\LOG.c">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\iLog3\LOGC.c">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\iLog3\LOGCONF_KVFILE.c">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\iLog3\LOGS.c">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\iLog3\LOGSCONF_KVFILE.c">
+      <Filter>Code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Code\LibDev\iLog3\LOG.h">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\LibDev\iLog3\LOGC.h">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\LibDev\iLog3\LOGCONF_KVFILE.h">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\LibDev\iLog3\LOGS.h">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\LibDev\iLog3\LOGSCONF_KVFILE.h">
+      <Filter>Code</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
