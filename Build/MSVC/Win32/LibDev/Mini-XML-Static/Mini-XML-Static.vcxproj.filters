@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Code">
+      <UniqueIdentifier>{9157894d-fd54-420f-8611-e577fc199c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{5c0fe986-bcee-4995-8822-9b4ebfe24c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\include">
+      <UniqueIdentifier>{ad9d4fcc-3320-46a2-a14a-2876676f0403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\src">
+      <UniqueIdentifier>{a16218ca-94f2-468d-80f4-0750c15f2a25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Code\LibDev\Mini-XML\include\config.h">
+      <Filter>Code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\LibDev\Mini-XML\include\mxml.h">
+      <Filter>Code\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-private.h">
+      <Filter>Code\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-attr.c">
+      <Filter>Code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-entity.c">
+      <Filter>Code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-file.c">
+      <Filter>Code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-get.c">
+      <Filter>Code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-index.c">
+      <Filter>Code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-node.c">
+      <Filter>Code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-private.c">
+      <Filter>Code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-search.c">
+      <Filter>Code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-set.c">
+      <Filter>Code\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\LibDev\Mini-XML\src\mxml-string.c">
+      <Filter>Code\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
