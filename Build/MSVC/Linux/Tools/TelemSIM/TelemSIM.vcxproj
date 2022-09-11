@@ -148,48 +148,72 @@
       <CompileAs>CompileAsC</CompileAs>
       <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <RemotePreBuildEvent>
+      <Command>cp $(RemoteRootDir)/iLog3/bin/$(Platform)/$(Configuration)/*.so $(RemoteRootDir)/$(RemoteOutRelDir);</Command>
+    </RemotePreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
       <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <RemotePreBuildEvent>
+      <Command>cp $(RemoteRootDir)/iLog3/bin/$(Platform)/$(Configuration)/*.so $(RemoteRootDir)/$(RemoteOutRelDir);</Command>
+    </RemotePreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
       <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <RemotePreBuildEvent>
+      <Command>cp $(RemoteRootDir)/iLog3/bin/$(Platform)/$(Configuration)/*.so $(RemoteRootDir)/$(RemoteOutRelDir);</Command>
+    </RemotePreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
       <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <RemotePreBuildEvent>
+      <Command>cp $(RemoteRootDir)/iLog3/bin/$(Platform)/$(Configuration)/*.so $(RemoteRootDir)/$(RemoteOutRelDir);</Command>
+    </RemotePreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
       <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <RemotePreBuildEvent>
+      <Command>cp $(RemoteRootDir)/iLog3/bin/$(Platform)/$(Configuration)/*.so $(RemoteRootDir)/$(RemoteOutRelDir);</Command>
+    </RemotePreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
       <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <RemotePreBuildEvent>
+      <Command>cp $(RemoteRootDir)/iLog3/bin/$(Platform)/$(Configuration)/*.so $(RemoteRootDir)/$(RemoteOutRelDir);</Command>
+    </RemotePreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
       <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <RemotePreBuildEvent>
+      <Command>cp $(RemoteRootDir)/iLog3/bin/$(Platform)/$(Configuration)/*.so $(RemoteRootDir)/$(RemoteOutRelDir);</Command>
+    </RemotePreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
       <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <RemotePreBuildEvent>
+      <Command>cp $(RemoteRootDir)/iLog3/bin/$(Platform)/$(Configuration)/*.so $(RemoteRootDir)/$(RemoteOutRelDir);</Command>
+    </RemotePreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
