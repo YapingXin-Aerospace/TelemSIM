@@ -16,6 +16,9 @@
     <Filter Include="Resource\Configuration">
       <UniqueIdentifier>{4bacd919-beb2-4947-8af5-296a84709bf6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\Common\LogInterface">
+      <UniqueIdentifier>{7684bf57-f6aa-46af-9d6c-7c064c6300ba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -29,6 +32,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Code\Common\common_functions.c">
       <Filter>Code\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\LogInterface\log_interface.c">
+      <Filter>Code\Common\LogInterface</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +52,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\Common\common_functions.h">
       <Filter>Code\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\LogInterface\log_interface.h">
+      <Filter>Code\Common\LogInterface</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
