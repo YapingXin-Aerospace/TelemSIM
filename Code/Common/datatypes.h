@@ -2,6 +2,7 @@
 #define _INC_COMMON_datatypes_H
 
 #include <stdbool.h>
+#include <stddef.h>
 #include <stdint.h>
 
 #ifdef _WIN32

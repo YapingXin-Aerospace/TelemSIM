@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "Common/datatypes.h"
-#include "Common/PosixInterface.h"
+#include "TelemSIM_Service.h"
+
 
 #if defined (_DEBUG) && defined (_WIN32)
 #include <vld.h>
