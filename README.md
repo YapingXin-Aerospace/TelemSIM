@@ -41,6 +41,7 @@ dpcpp         Intel LLVM C++ Compiler for data parallel programming model based 
 
 ### Dependent Libraries
 
+* iLog3
 * Visual Leak Detector for Visual Studio 2019 (Optional)
 
 ### Uasge
