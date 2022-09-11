@@ -47,5 +47,10 @@ void service_cleanup()
     LOGINFO("==================");
     LOGINFO("TMSrcImport END!");
     LOGINFO("==================");
+
+#if defined (_WIN32)
+    // On Linux OS, this line of code below causes a run-time fatal error:
+    // Segmentation fault (core dumped)
     logging_release();
+#endif
 }
