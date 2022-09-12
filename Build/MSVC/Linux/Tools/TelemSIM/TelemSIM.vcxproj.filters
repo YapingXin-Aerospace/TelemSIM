@@ -22,6 +22,15 @@
     <Filter Include="Code\Common\Mini-XML">
       <UniqueIdentifier>{f6012010-d576-405d-bb27-ed7491c59abd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\LibDev">
+      <UniqueIdentifier>{f0d22520-78a2-45ba-be4e-c928c1291902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\LibDev\Mini-XML">
+      <UniqueIdentifier>{b1704317-b45d-4271-860c-9960669d7ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\LibDev\Mini-XML\include">
+      <UniqueIdentifier>{ae82eec9-d5f9-486d-b950-90050c21944e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -64,6 +73,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.h">
       <Filter>Code\Common\Mini-XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\LibDev\Mini-XML\include\mxml.h">
+      <Filter>Code\LibDev\Mini-XML\include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

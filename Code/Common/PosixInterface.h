@@ -16,9 +16,11 @@
 #   ifndef strcasecmp
 #       define strcasecmp _stricmp
 #   endif
+
 #   ifndef strnicmp
 #       define strnicmp _strnicmp
 #   endif
+
 #   ifndef strtok_r
 #       define strtok_r strtok_s
 #   endif
@@ -50,6 +52,14 @@
 #endif
 
 //#define X_OK  1   /* Flag meaning test for execute/search permission. - unsupported in windows*/
+
+#elif defined( __linux )
+#   include <unistd.h>
+#   include <strings.h>
+
+#   ifndef strnicmp
+#       define strnicmp strncasecmp
+#   endif
 
 #endif
 

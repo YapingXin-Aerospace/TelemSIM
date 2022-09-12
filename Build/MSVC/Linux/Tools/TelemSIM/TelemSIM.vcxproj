@@ -144,6 +144,7 @@
     <ClInclude Include="..\..\..\..\..\Code\Common\LogInterface\log_interface.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\PosixInterface.h" />
+    <ClInclude Include="..\..\..\..\..\Code\LibDev\Mini-XML\include\mxml.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Config.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Service.h" />
   </ItemGroup>
@@ -156,7 +157,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;../../../../../Code/LibDev/Mini-XML/include;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;$(RemoteRootDir)/mxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -171,7 +172,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;../../../../../Code/LibDev/Mini-XML/include;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;$(RemoteRootDir)/mxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -186,7 +187,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;../../../../../Code/LibDev/Mini-XML/include;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;$(RemoteRootDir)/mxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -201,7 +202,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;../../../../../Code/LibDev/Mini-XML/include;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;$(RemoteRootDir)/mxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -216,7 +217,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;../../../../../Code/LibDev/Mini-XML/include;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;$(RemoteRootDir)/mxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -231,7 +232,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;../../../../../Code/LibDev/Mini-XML/include;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;$(RemoteRootDir)/mxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -246,7 +247,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;../../../../../Code/LibDev/Mini-XML/include;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;$(RemoteRootDir)/mxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>
@@ -261,7 +262,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <ClCompile>
       <CompileAs>CompileAsC</CompileAs>
-      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../../../Code;../../../../../Code/Utilities/Tools/TelemSIM;../../../../../Code/LibDev/Mini-XML/include;$(RemoteRootDir)/iLog3/Code/LibDev/iLog3;/usr/local/include;$(RemoteRootDir)/mxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <RemotePreBuildEvent>
       <Command>

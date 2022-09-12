@@ -23,7 +23,7 @@
 #ifndef _INC_COMMON_MINI_XML_mxml_helper_H
 #define _INC_COMMON_MINI_XML_mxml_helper_H
 
-#include <mxml.h>
+#include "../../LibDev/Mini-XML/include/mxml.h"
 #include "../datatypes.h"
 
 
