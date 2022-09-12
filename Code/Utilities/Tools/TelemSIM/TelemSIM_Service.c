@@ -1,11 +1,21 @@
 ﻿#include "Common/common_functions.h"
 #include "Common/LogInterface/log_interface.h"
 #include "TelemSIM_Service.h"
+#include "TelemSIM_Config.h"
+
+#define HOSTNODE_CONFIGXMLFILE  "Resource/Configuration/TelemSIM.xml"
 
 
 HResult service_setup(int argc, char* argv[])
 {
     HResult retcode = HResult_OK;
+    TelemSIMConfig* config = get_G_TelemSIMConfig();
+
+    if (config == NULL)
+    {
+        retcode = HResult_CONFIG_FAIL;
+        goto EXIT;
+    }
 
     // Very important step, to enable the Windows terminal to display UTF-8 Chinese characters.
     SetConsoleLocale("zh_CN.UTF-8");
@@ -20,6 +30,13 @@ HResult service_setup(int argc, char* argv[])
     LOGINFO("==================");
     LOGINFO("TelemSIM Start!");
     LOGINFO("==================");
+
+    retcode = get_HostNode_configuration(HOSTNODE_CONFIGXMLFILE);
+    if (retcode != HResult_OK)
+    {
+        LOGERROR("Load configuration failed.");
+        goto EXIT;
+    }
 
 EXIT:
     return retcode;
@@ -45,7 +62,7 @@ HResult service_stop()
 void service_cleanup()
 {
     LOGINFO("==================");
-    LOGINFO("TMSrcImport END!");
+    LOGINFO("TelemSIM END!");
     LOGINFO("==================");
 
 #if ( defined _WIN32 )

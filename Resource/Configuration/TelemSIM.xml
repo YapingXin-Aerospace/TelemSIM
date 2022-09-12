@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <Configuration>
     <Files>
-        <TelemetrySourceDB File="C:\Service\TMSrcImport\DataCollation\TTC_TMSrc_Collation.bin" />
-        <TMResultDumpFolder Dir="C:\Service\TMSrcImport\Dump" />
+        <TelemetrySource Dir="D:\var\dataset\2022_08_05_基地遥测源码(FixedByHJZ)" />
     </Files>
 </Configuration>

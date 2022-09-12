@@ -19,6 +19,9 @@
     <Filter Include="Code\Common\LogInterface">
       <UniqueIdentifier>{7684bf57-f6aa-46af-9d6c-7c064c6300ba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\Common\Mini-XML">
+      <UniqueIdentifier>{8572c514-42de-4229-bfc0-f93522364f61}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -35,6 +38,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Code\Common\LogInterface\log_interface.c">
       <Filter>Code\Common\LogInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.c">
+      <Filter>Code\Common\Mini-XML</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\Common\LogInterface\log_interface.h">
       <Filter>Code\Common\LogInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.h">
+      <Filter>Code\Common\Mini-XML</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

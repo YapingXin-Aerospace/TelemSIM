@@ -90,7 +90,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <CompileAs>CompileAsC</CompileAs>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
@@ -110,7 +110,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <CompileAs>CompileAsC</CompileAs>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
@@ -130,7 +130,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <CompileAs>CompileAsC</CompileAs>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
@@ -150,7 +150,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <CompileAs>CompileAsC</CompileAs>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
@@ -169,6 +169,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Common\common_functions.c" />
     <ClCompile Include="..\..\..\..\..\Code\Common\LogInterface\log_interface.c" />
+    <ClCompile Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Config.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Service.c" />
@@ -177,6 +178,7 @@
     <ClInclude Include="..\..\..\..\..\Code\Common\common_functions.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\datatypes.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\LogInterface\log_interface.h" />
+    <ClInclude Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\PosixInterface.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Config.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Service.h" />
