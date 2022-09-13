@@ -38,6 +38,9 @@ static HResult get_XML_TelemSIMConfig(TelemSIMConfig* config, char* const filepa
     HResult retcode = HResult_OK;
     mxml_node_t* tree = NULL;
     mxml_node_t* node_Configuration = NULL;
+    mxml_node_t* node_Files = NULL;
+    mxml_node_t* node;
+    const char* attr_text = NULL;
 
     if (NULL == config || NULL == filepath || 0 == strlen(filepath))
     {
@@ -58,6 +61,32 @@ static HResult get_XML_TelemSIMConfig(TelemSIMConfig* config, char* const filepa
     {
         retcode = HResult_DECODE_FAIL;
         goto EXIT;
+    }
+
+    node_Files = mxmlFindPath(node_Configuration, "Files");
+    if (!node_Files)
+    {
+        retcode = HResult_DECODE_FAIL;
+        goto EXIT;
+    }
+
+    node = mxmlFindPath(node_Files, "TelemetrySource");
+    if (!node)
+    {
+        retcode = HResult_DECODE_FAIL;
+        goto EXIT;
+    }
+
+    attr_text = mxmlElementGetAttr(node, "Dir");
+    if (attr_text)
+    {
+        if (strlen(attr_text) >= PATH_MAX)
+        {
+            retcode = HResult_PARAM_OUTRANGE;
+            goto EXIT;
+        }
+
+        strcpy(config->TelemetrySourceDir, attr_text);
     }
 
 EXIT:

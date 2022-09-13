@@ -38,6 +38,8 @@ HResult service_setup(int argc, char* argv[])
         goto EXIT;
     }
 
+    LOGINFO("TelemetrySource.Dir = %s", config->TelemetrySourceDir);
+
 EXIT:
     return retcode;
 }

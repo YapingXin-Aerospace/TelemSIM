@@ -31,6 +31,12 @@
     <Filter Include="Code\LibDev\Mini-XML\include">
       <UniqueIdentifier>{ae82eec9-d5f9-486d-b950-90050c21944e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\Common\DS">
+      <UniqueIdentifier>{1e046d3f-91ba-4e8f-8f5a-2ee8f6b46d14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Common\SQLite3_Helper">
+      <UniqueIdentifier>{17d92295-984d-42a3-8424-e426e5a5de0d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -50,6 +56,27 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.c">
       <Filter>Code\Common\Mini-XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\cstr.c">
+      <Filter>Code\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\DS\BinOutputBuf.c">
+      <Filter>Code\Common\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\DS\RefBlob.c">
+      <Filter>Code\Common\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\DS\RefString.c">
+      <Filter>Code\Common\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\DS\RingBuf.c">
+      <Filter>Code\Common\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\DS\TxtOutputBuf.c">
+      <Filter>Code\Common\DS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\SQLite3_Helper\sqlite3_helper.c">
+      <Filter>Code\Common\SQLite3_Helper</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +103,27 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\LibDev\Mini-XML\include\mxml.h">
       <Filter>Code\LibDev\Mini-XML\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\cstr.h">
+      <Filter>Code\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\DS\BinOutputBuf.h">
+      <Filter>Code\Common\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\DS\RefBlob.h">
+      <Filter>Code\Common\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\DS\RefString.h">
+      <Filter>Code\Common\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\DS\RingBuf.h">
+      <Filter>Code\Common\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\DS\TxtOutputBuf.h">
+      <Filter>Code\Common\DS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\SQLite3_Helper\sqlite3_helper.h">
+      <Filter>Code\Common\SQLite3_Helper</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
