@@ -23,6 +23,7 @@
 #define _INC_COMMON_DS_RingBuf_H
 
 #include "../datatypes.h"
+#include "../PosixInterface.h"
 
 
 typedef struct

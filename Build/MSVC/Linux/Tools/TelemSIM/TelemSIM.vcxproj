@@ -179,7 +179,7 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;sqlite3;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
@@ -194,7 +194,7 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;sqlite3;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
@@ -209,7 +209,7 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;sqlite3;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
@@ -224,7 +224,7 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;sqlite3;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
@@ -239,7 +239,7 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;sqlite3;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
@@ -254,7 +254,7 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;sqlite3;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
@@ -269,7 +269,7 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;sqlite3;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
@@ -284,7 +284,7 @@
     </RemotePreBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>/usr/local/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <LibraryDependencies>pthread;dl;m;iLog3;mxml;%(LibraryDependencies)</LibraryDependencies>
+      <LibraryDependencies>pthread;dl;m;iLog3;mxml;sqlite3;%(LibraryDependencies)</LibraryDependencies>
       <SharedLibrarySearchPath>/usr/local/lib;%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>

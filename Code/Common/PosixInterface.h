@@ -56,9 +56,14 @@
 #elif defined( __linux )
 #   include <unistd.h>
 #   include <strings.h>
+#   include <sys/types.h>
 
 #   ifndef strnicmp
 #       define strnicmp strncasecmp
+#   endif
+
+#   ifndef _strnicmp
+#       define _strnicmp strncmp
 #   endif
 
 #endif

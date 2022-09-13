@@ -4,6 +4,8 @@
 #include <errno.h>
 #include "cstr.h"
 
+#include "PosixInterface.h"
+
 
 // 函数功能描述：1. 返回字符串从左到右第一个非空白符的字符的指针 p_Begin ;
 //             2. 如果 p_Length 不为NULL，则通过它输出左侧右侧都去除`空白符`之后的字符串的长度.
