@@ -43,6 +43,7 @@ dpcpp         Intel LLVM C++ Compiler for data parallel programming model based 
 
 * iLog3 ( https://github.com/calvinwilliams/iLOG3 )
 * Mini-XML ( https://www.msweet.org/mxml/ )
+* sqlite3
 * Visual Leak Detector 2019 (Optional, https://github.com/oneiric/vld )
 
 ### Uasge
