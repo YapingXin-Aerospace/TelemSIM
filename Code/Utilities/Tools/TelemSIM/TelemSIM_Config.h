@@ -8,6 +8,7 @@ typedef struct
 {
     char TelemetrySourceDir[PATH_MAX];
     char TelemetrySourceDBFile[PATH_MAX];
+    char ResultDumpFolder[PATH_MAX];
 
 } TelemSIMConfig;
 
