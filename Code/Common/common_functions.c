@@ -11,6 +11,7 @@
 #   define stat _stat
 #   define stat_s struct _stat
 #elif defined( __linux )
+#   include <unistd.h>
 #   define stat_s struct stat
 #endif // !_WIN32
 
@@ -220,7 +221,21 @@ bool is_file_exist(const char* filepath)
 
 bool is_directory_exist(const char* dirpath)
 {
+    bool rc = true;
+
     stat_s st = { 0 };
-    stat(dirpath, &st);
-    return S_IFDIR == (st.st_mode & S_IFDIR);
+    if (0 != stat(dirpath, &st))
+    {
+        rc = false;
+        goto EXIT;
+    }
+
+#ifdef _WIN32
+    rc = (S_IFDIR == (st.st_mode & S_IFDIR));
+#elif defined( __linux )
+    rc = (__S_IFDIR == (st.st_mode & __S_IFDIR));
+#endif
+
+EXIT:
+    return rc;
 }

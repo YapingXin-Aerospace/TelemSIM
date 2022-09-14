@@ -134,7 +134,7 @@ typedef uint32_t HResult;
 #define HResult_SOCKET_SetOptFailed       0x7E000003
 #define HResult_SOCKET_BindFailed         0x7E000004
 
-#define HResult_CUSTOM_7F_FAIL      0x7F000000
+#define HResult_CUSTOM_7F_FAIL      0x7F000000u
 
 #define HResult_SQLite3OpenFail     0x00140001
 #define HResult_SQLite3QueryFail    0x00150001
