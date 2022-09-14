@@ -39,6 +39,7 @@ HResult service_setup(int argc, char* argv[])
     }
 
     LOGINFO("TelemetrySource.Dir = %s", config->TelemetrySourceDir);
+    LOGINFO("TelemetrySourceDB.File = %s", config->TelemetrySourceDBFile);
 
 EXIT:
     return retcode;

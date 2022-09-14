@@ -89,6 +89,25 @@ static HResult get_XML_TelemSIMConfig(TelemSIMConfig* config, char* const filepa
         strcpy(config->TelemetrySourceDir, attr_text);
     }
 
+    node = mxmlFindPath(node_Files, "TelemetrySourceDB");
+    if (!node)
+    {
+        retcode = HResult_DECODE_FAIL;
+        goto EXIT;
+    }
+
+    attr_text = mxmlElementGetAttr(node, "File");
+    if (attr_text)
+    {
+        if (strlen(attr_text) >= PATH_MAX)
+        {
+            retcode = HResult_PARAM_OUTRANGE;
+            goto EXIT;
+        }
+
+        strcpy(config->TelemetrySourceDBFile, attr_text);
+    }
+
 EXIT:
 
     if (tree)
