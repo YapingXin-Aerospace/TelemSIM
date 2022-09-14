@@ -176,7 +176,7 @@ HResult cstr_strtol_ULongInt(const char* cstr, unsigned long long* p_vull)
         // 2. ERANGE The resulting value was out of range.
         // 3. The implementation may also set errno to EINVAL in case no conversion was performed (no digits seen, and 0 returned).
         // ---------------------------------------------------------------------------------------------------------------------------
-        retcode = HResult_CUSTOM_7F_FAIL + errno;
+        retcode = HResult_CUSTOM_7F_FAIL + (HResult)errno;
         goto EXIT;
     }
     else if (*endptr)
@@ -238,7 +238,7 @@ HResult cstr_strtol_LongInt(const char* cstr, long long* p_vll)
         // 2. ERANGE The resulting value was out of range.
         // 3. The implementation may also set errno to EINVAL in case no conversion was performed (no digits seen, and 0 returned).
         // ---------------------------------------------------------------------------------------------------------------------------
-        retcode = HResult_CUSTOM_7F_FAIL + errno;
+        retcode = HResult_CUSTOM_7F_FAIL + (HResult)errno;
         goto EXIT;
     }
     else if (*endptr)
@@ -290,7 +290,7 @@ HResult cstr_strtol_LongDouble(const char* cstr, long double* p_v)
         // 2. ERANGE The resulting value was out of range.
         // 3. The implementation may also set errno to EINVAL in case no conversion was performed (no digits seen, and 0 returned).
         // ---------------------------------------------------------------------------------------------------------------------------
-        retcode = HResult_CUSTOM_7F_FAIL + errno;
+        retcode = HResult_CUSTOM_7F_FAIL + (HResult)errno;
         goto EXIT;
     }
     else if (*endptr)
@@ -342,7 +342,7 @@ HResult cstr_strtol_Double(const char* cstr, double* p_v)
         // 2. ERANGE The resulting value was out of range.
         // 3. The implementation may also set errno to EINVAL in case no conversion was performed (no digits seen, and 0 returned).
         // ---------------------------------------------------------------------------------------------------------------------------
-        retcode = HResult_CUSTOM_7F_FAIL + errno;
+        retcode = HResult_CUSTOM_7F_FAIL + (HResult)errno;
         goto EXIT;
     }
     else if (*endptr)
@@ -383,7 +383,7 @@ HResult cstr_replace_withlength(char* outbuf, size_t* outlen, const char* cstr, 
     const char* p;
     char* q = outbuf;
 
-    if (cstr == NULL || length == 0 || findstr == NULL || (findlength = strlen(findstr)) == 0 || outlen == NULL)
+    if (cstr == NULL || length == 0 || findstr == NULL || (findlength = (ssize_t)strlen(findstr)) == 0 || outlen == NULL)
     {
         retcode = HResult_PARAM_NULL;
         goto EXIT;
@@ -423,7 +423,7 @@ HResult cstr_replace_withlength(char* outbuf, size_t* outlen, const char* cstr, 
         goto EXIT;
     }
 
-    replacelen = (replace == NULL) ? 0 : strlen(replace);
+    replacelen = (replace == NULL) ? 0 : (ssize_t)strlen(replace);
     *outlen = (size_t)((ssize_t)length - findlength + replacelen);
 
     if (outbuf == NULL)
@@ -443,13 +443,13 @@ HResult cstr_replace_withlength(char* outbuf, size_t* outlen, const char* cstr, 
 
     if (offset > 0)
     {
-        memcpy(q, cstr, offset * sizeof(char));
+        memcpy(q, cstr, (size_t)offset * sizeof(char));
         q += offset;
     }
 
     if (replacelen > 0)
     {
-        memcpy(q, replace, replacelen * sizeof(char));
+        memcpy(q, replace, (size_t)replacelen * sizeof(char));
         q += replacelen;
     }
 
@@ -457,7 +457,7 @@ HResult cstr_replace_withlength(char* outbuf, size_t* outlen, const char* cstr, 
     if (offset > 0)
     {
         p += findlength;
-        memcpy(q, p, offset * sizeof(char));
+        memcpy(q, p, (size_t)offset * sizeof(char));
     }
 
 EXIT:

@@ -50,8 +50,15 @@ EXIT:
 HResult service_start()
 {
     HResult retcode = HResult_OK;
+    TelemSIMConfig* config = get_G_TelemSIMConfig();
 
-//EXIT:
+    if (config == NULL)
+    {
+        retcode = HResult_CONFIG_FAIL;
+        goto EXIT;
+    }
+
+EXIT:
     return retcode;
 }
 
