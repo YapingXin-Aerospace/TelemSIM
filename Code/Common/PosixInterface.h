@@ -4,6 +4,8 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+#include <sys/types.h>
+
 
 #ifdef _WIN32
 #include <io.h>
@@ -56,7 +58,7 @@
 #elif defined( __linux )
 #   include <unistd.h>
 #   include <strings.h>
-#   include <sys/types.h>
+//#include <sys/types.h>
 
 #   ifndef strnicmp
 #       define strnicmp strncasecmp

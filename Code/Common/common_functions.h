@@ -19,5 +19,6 @@ HResult Win32_TextConvert_UTF8ToUCS2(wchar_t* outbuf, uint32_t* p_wcsLen, const 
 #endif // !_WIN32
 
 bool is_file_exist(const char* filepath);
+bool is_directory_exist(const char* dirpath);
 
 #endif // !_INC_CLANG_COMMON_common_functions_H

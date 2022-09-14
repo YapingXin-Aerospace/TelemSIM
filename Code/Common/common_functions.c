@@ -3,8 +3,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include <sys/types.h>
+#include <sys/stat.h>
+
 #ifdef _WIN32
-#include <Windows.h>
+#   include <Windows.h>
+#   define stat _stat
+#   define stat_s struct _stat
+#elif defined( __linux )
+#   define stat_s struct stat
 #endif // !_WIN32
 
 #include "PosixInterface.h"
@@ -205,5 +212,15 @@ EXIT:
 
 bool is_file_exist(const char* filepath)
 {
+    /*stat_s st = { 0 };
+    stat(filepath, &st);
+    return S_IFREG == (st.st_mode & S_IFREG);*/
     return RETCODE_U8_OK == is_path_exist(filepath);
+}
+
+bool is_directory_exist(const char* dirpath)
+{
+    stat_s st = { 0 };
+    stat(dirpath, &st);
+    return S_IFDIR == (st.st_mode & S_IFDIR);
 }

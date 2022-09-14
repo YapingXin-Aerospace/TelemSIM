@@ -1,4 +1,5 @@
 ﻿#include "TelemSIM_Config.h"
+#include "Common/common_functions.h"
 #include "Common/Mini-XML/mxml-helper.h"
 
 
@@ -89,6 +90,12 @@ static HResult get_XML_TelemSIMConfig(TelemSIMConfig* config, char* const filepa
         strcpy(config->TelemetrySourceDir, attr_text);
     }
 
+    if (!is_directory_exist(config->TelemetrySourceDir))
+    {
+        retcode = HResult_DIR_NOTEXISTS;
+        goto EXIT;
+    }
+
     node = mxmlFindPath(node_Files, "TelemetrySourceDB");
     if (!node)
     {
@@ -108,6 +115,12 @@ static HResult get_XML_TelemSIMConfig(TelemSIMConfig* config, char* const filepa
         strcpy(config->TelemetrySourceDBFile, attr_text);
     }
 
+    if (!is_file_exist(config->TelemetrySourceDBFile))
+    {
+        retcode = HResult_DIR_NOTEXISTS;
+        goto EXIT;
+    }
+
     node = mxmlFindPath(node_Files, "ResultDump");
     if (!node)
     {
@@ -125,6 +138,12 @@ static HResult get_XML_TelemSIMConfig(TelemSIMConfig* config, char* const filepa
         }
 
         strcpy(config->ResultDumpFolder, attr_text);
+    }
+
+    if (!is_directory_exist(config->ResultDumpFolder))
+    {
+        retcode = HResult_DIR_NOTEXISTS;
+        goto EXIT;
     }
 
 EXIT:

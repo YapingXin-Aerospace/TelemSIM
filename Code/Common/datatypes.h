@@ -89,6 +89,7 @@ typedef uint32_t HResult;
 #define HResult_FILE_CannotRead     0x00130008
 #define HResult_FILE_CannotWrite    0x00130010
 #define HResult_DIR_LOOKUP_FAILED   0x00130020
+#define HResult_DIR_NOTEXISTS       0x00130021
 #define HResult_PATH_RetrieveFail   0x00130040
 #define HResult_FILE_OPEN_FAIL      0x00130080
 #define HResult_MODULE_NotFound     0x00140001
