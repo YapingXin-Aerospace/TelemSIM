@@ -19,7 +19,7 @@ HResult service_setup(int argc, char* argv[])
         goto EXIT;
     }
 
-    uint64_t snid = snowflake_id();
+    uint64_t snid0 = snowflake_timestamp_id();
 
     // Very important step, to enable the Windows terminal to display UTF-8 Chinese characters.
     SetConsoleLocale("zh_CN.UTF-8");
@@ -42,9 +42,15 @@ HResult service_setup(int argc, char* argv[])
         goto EXIT;
     }
 
+    uint64_t snid1 = snowflake_timestamp_id();
+    uint64_t snid2 = snowflake_timestamp_id();
+
     LOGINFO("TelemetrySource.Dir = %s", config->TelemetrySourceDir);
     LOGINFO("TelemetrySourceDB.File = %s", config->TelemetrySourceDBFile);
     LOGINFO("ResultDump.Dir = %s", config->ResultDumpFolder);
+    LOGINFO("SnowFlake Id0: 0x%llx", snid0);
+    LOGINFO("SnowFlake Id1: 0x%llx", snid1);
+    LOGINFO("SnowFlake Id2: 0x%llx", snid2);
 
 EXIT:
     return retcode;

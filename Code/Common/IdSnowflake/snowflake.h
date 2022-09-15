@@ -33,14 +33,17 @@
 #define DATACENTER_LEFT_OFFSET (SEQ_BIT + MACHINE_BIT)
 #define TIMESTAMP_LEFT_OFFSET (DATACENTER_LEFT_OFFSET + DATACENTER_BIT)
 
-uint64_t snowflake_id();
+//uint64_t snowflake_id();
 uint64_t snowflake_timestamp();
 
-typedef struct {
+typedef struct
+{
     uint64_t last_timestamp;
     int datacenter;
     int machine;
     int seq;
 } snowflake_st;
+
+uint64_t snowflake_timestamp_id();
 
 #endif
