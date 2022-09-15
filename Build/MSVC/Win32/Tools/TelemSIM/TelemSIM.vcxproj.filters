@@ -28,6 +28,9 @@
     <Filter Include="Code\Common\DS">
       <UniqueIdentifier>{cd736ae4-8121-46de-9768-d4116e52597c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\Common\TMLib">
+      <UniqueIdentifier>{57acbfc4-0f5e-466e-a02b-468d11053513}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -68,6 +71,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Code\Common\cstr.c">
       <Filter>Code\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.c">
+      <Filter>Code\Common\TMLib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +118,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\Common\cstr.h">
       <Filter>Code\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.h">
+      <Filter>Code\Common\TMLib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -141,6 +141,7 @@
     <ClCompile Include="..\..\..\..\..\Code\Common\LogInterface\log_interface.c" />
     <ClCompile Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.c" />
     <ClCompile Include="..\..\..\..\..\Code\Common\SQLite3_Helper\sqlite3_helper.c" />
+    <ClCompile Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Config.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Service.c" />
@@ -158,6 +159,7 @@
     <ClInclude Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\PosixInterface.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\SQLite3_Helper\sqlite3_helper.h" />
+    <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.h" />
     <ClInclude Include="..\..\..\..\..\Code\LibDev\Mini-XML\include\mxml.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Config.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Service.h" />

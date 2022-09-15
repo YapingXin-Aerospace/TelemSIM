@@ -37,6 +37,9 @@
     <Filter Include="Code\Common\SQLite3_Helper">
       <UniqueIdentifier>{17d92295-984d-42a3-8424-e426e5a5de0d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\Common\TMLib">
+      <UniqueIdentifier>{a0a121e7-de0c-49f2-8b54-1fcfea5c809a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -77,6 +80,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Code\Common\SQLite3_Helper\sqlite3_helper.c">
       <Filter>Code\Common\SQLite3_Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.c">
+      <Filter>Code\Common\TMLib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +130,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\Common\SQLite3_Helper\sqlite3_helper.h">
       <Filter>Code\Common\SQLite3_Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.h">
+      <Filter>Code\Common\TMLib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
