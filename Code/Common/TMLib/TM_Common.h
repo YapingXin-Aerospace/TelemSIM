@@ -19,6 +19,7 @@ typedef struct
     size_t      FileSize;
 
     uint32_t    Chksum32_0;
+    uint32_t    Chksum32_1;
 
     uint32_t    FID;
     uint32_t    DataSetId;
