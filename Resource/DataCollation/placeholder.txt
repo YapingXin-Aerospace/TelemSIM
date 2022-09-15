@@ -1,5 +1,0 @@
-Placeholder
-
-TTC_TMSRC_DS.bin
-
-Dev_TelemSIM_TTC_TMSRC_DS

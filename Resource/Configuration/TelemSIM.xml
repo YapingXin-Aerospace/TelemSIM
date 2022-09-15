@@ -2,7 +2,7 @@
 <Configuration>
     <Files>
         <TelemetrySource Dir="/var/dataset/2021_11_26_稳定性测试结束_1638_第十五次总检查-IIA-频标切换" />
-        <TelemetrySourceDB File="/var/DataCollation/TTC_TMSrc_Collation.bin" />
+        <TelemetrySourceDB File="/var/DataCollation/TTC_TMSRC_DS_V01.00.00.00_d220915T0944.bin" />
         <ResultDump Dir="/var/TelemSIM/Dump" />
     </Files>
 </Configuration>

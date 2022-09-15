@@ -169,6 +169,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\Resource\Configuration\TelemSIM_logsconf_kvfile.conf" />
+    <None Include="..\..\..\..\..\Resource\DataCollation\TTC_TMSRC_DS_V01.00.00.00_d220915T0944.bin" />
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>

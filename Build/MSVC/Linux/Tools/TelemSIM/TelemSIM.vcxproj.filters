@@ -40,6 +40,9 @@
     <Filter Include="Code\Common\TMLib">
       <UniqueIdentifier>{a0a121e7-de0c-49f2-8b54-1fcfea5c809a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource\DataCollation">
+      <UniqueIdentifier>{db040e5e-8c34-4476-8832-e0f4ecd4364b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -143,6 +146,9 @@
   <ItemGroup>
     <None Include="..\..\..\..\..\Resource\Configuration\TelemSIM_logsconf_kvfile.conf">
       <Filter>Resource\Configuration</Filter>
+    </None>
+    <None Include="..\..\..\..\..\Resource\DataCollation\TTC_TMSRC_DS_V01.00.00.00_d220915T0944.bin">
+      <Filter>Resource\DataCollation</Filter>
     </None>
   </ItemGroup>
 </Project>
