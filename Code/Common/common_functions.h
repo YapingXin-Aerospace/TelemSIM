@@ -21,4 +21,9 @@ HResult Win32_TextConvert_UTF8ToUCS2(wchar_t* outbuf, uint32_t* p_wcsLen, const 
 bool is_file_exist(const char* filepath);
 bool is_directory_exist(const char* dirpath);
 
+
+#ifdef _MSC_VER
+int gettimeofday(struct timeval* tp, struct timezone* tzp);
+#endif /* _MSC_VER */
+
 #endif // !_INC_CLANG_COMMON_common_functions_H
