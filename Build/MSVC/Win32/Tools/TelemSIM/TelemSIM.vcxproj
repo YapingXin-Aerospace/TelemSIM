@@ -190,6 +190,10 @@ copy "$(VLD_ROOT)\bin\Win64\*.*" $(TargetDir)</Command>
     <ClCompile Include="..\..\..\..\..\Code\Common\DS\RefString.c" />
     <ClCompile Include="..\..\..\..\..\Code\Common\DS\RingBuf.c" />
     <ClCompile Include="..\..\..\..\..\Code\Common\DS\TxtOutputBuf.c" />
+    <ClCompile Include="..\..\..\..\..\Code\Common\IdGenSnowflake\IdGenerator.c" />
+    <ClCompile Include="..\..\..\..\..\Code\Common\IdGenSnowflake\IdGenOptions.c" />
+    <ClCompile Include="..\..\..\..\..\Code\Common\IdGenSnowflake\SnowWorkerM1.c" />
+    <ClCompile Include="..\..\..\..\..\Code\Common\IdGenSnowflake\SnowWorkerM2.c" />
     <ClCompile Include="..\..\..\..\..\Code\Common\LogInterface\log_interface.c" />
     <ClCompile Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.c" />
     <ClCompile Include="..\..\..\..\..\Code\Common\SQLite3_Helper\sqlite3_helper.c" />
@@ -207,6 +211,10 @@ copy "$(VLD_ROOT)\bin\Win64\*.*" $(TargetDir)</Command>
     <ClInclude Include="..\..\..\..\..\Code\Common\DS\RefString.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\DS\RingBuf.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\DS\TxtOutputBuf.h" />
+    <ClInclude Include="..\..\..\..\..\Code\Common\IdGenSnowflake\IdGenerator.h" />
+    <ClInclude Include="..\..\..\..\..\Code\Common\IdGenSnowflake\IdGenOptions.h" />
+    <ClInclude Include="..\..\..\..\..\Code\Common\IdGenSnowflake\SnowWorkerM1.h" />
+    <ClInclude Include="..\..\..\..\..\Code\Common\IdGenSnowflake\SnowWorkerM2.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\LogInterface\log_interface.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\PosixInterface.h" />

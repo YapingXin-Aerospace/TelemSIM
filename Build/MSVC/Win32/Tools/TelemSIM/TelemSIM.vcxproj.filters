@@ -34,6 +34,9 @@
     <Filter Include="Resource\DataCollation">
       <UniqueIdentifier>{4aba0bef-2086-4d24-99ca-c2382a504ed5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\Common\IdGenSnowflake">
+      <UniqueIdentifier>{ab49a1da-d40d-4f11-a78c-b0eaa6fa079a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -77,6 +80,18 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.c">
       <Filter>Code\Common\TMLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\IdGenSnowflake\IdGenerator.c">
+      <Filter>Code\Common\IdGenSnowflake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\IdGenSnowflake\IdGenOptions.c">
+      <Filter>Code\Common\IdGenSnowflake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\IdGenSnowflake\SnowWorkerM1.c">
+      <Filter>Code\Common\IdGenSnowflake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\IdGenSnowflake\SnowWorkerM2.c">
+      <Filter>Code\Common\IdGenSnowflake</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +139,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.h">
       <Filter>Code\Common\TMLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\IdGenSnowflake\IdGenerator.h">
+      <Filter>Code\Common\IdGenSnowflake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\IdGenSnowflake\IdGenOptions.h">
+      <Filter>Code\Common\IdGenSnowflake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\IdGenSnowflake\SnowWorkerM1.h">
+      <Filter>Code\Common\IdGenSnowflake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\IdGenSnowflake\SnowWorkerM2.h">
+      <Filter>Code\Common\IdGenSnowflake</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
