@@ -3,6 +3,8 @@
 #include "TelemSIM_Service.h"
 #include "TelemSIM_Config.h"
 
+#include "Common/IdSnowflake/snowflake.h"
+
 #define HOSTNODE_CONFIGXMLFILE  "Resource/Configuration/TelemSIM.xml"
 
 
@@ -16,6 +18,8 @@ HResult service_setup(int argc, char* argv[])
         retcode = HResult_CONFIG_FAIL;
         goto EXIT;
     }
+
+    uint64_t snid = snowflake_id();
 
     // Very important step, to enable the Windows terminal to display UTF-8 Chinese characters.
     SetConsoleLocale("zh_CN.UTF-8");
