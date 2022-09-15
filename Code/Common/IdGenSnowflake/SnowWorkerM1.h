@@ -13,6 +13,8 @@
 #include <stdbool.h>
 #include "IdGenOptions.h"
 
+#include "IdGenerator_Common.h"
+
 
 extern pthread_mutex_t ThreadMutex;
 
@@ -47,7 +49,7 @@ extern int64_t GetCurrentTimeTick(SnowFlakeWorker *worker);
 
 extern int64_t GetNextTimeTick(SnowFlakeWorker *worker);
 
-extern int64_t GetCurrentTime();
+// extern int64_t GetCurrentTime();
 
 extern int64_t GetCurrentMicroTime();
 

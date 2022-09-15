@@ -158,15 +158,15 @@ extern int64_t GetCurrentTimeTick(SnowFlakeWorker *worker) {
     return ((int64_t) tv.tv_sec * 1000 + tv.tv_usec / 1000 - worker->BaseTime);
 }
 
-extern int64_t GetCurrentTime() {
-    struct timeval tv;
-    gettimeofday(&tv, NULL);
-    return ((int64_t) (tv.tv_sec)) * 1000 + tv.tv_usec / 1000;
-
-    //static struct timeb t1;
-    //    ftime(&t1);
-    //    return (uint64_t) ((t1.time * 1000 + t1.millitm));
-}
+//extern int64_t GetCurrentTime() {
+//    struct timeval tv;
+//    gettimeofday(&tv, NULL);
+//    return ((int64_t) (tv.tv_sec)) * 1000 + tv.tv_usec / 1000;
+//
+//    //static struct timeb t1;
+//    //    ftime(&t1);
+//    //    return (uint64_t) ((t1.time * 1000 + t1.millitm));
+//}
 
 extern int64_t GetCurrentMicroTime() {
     struct timeval tv;
