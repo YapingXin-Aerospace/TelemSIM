@@ -27,6 +27,9 @@ typedef struct
 
 } StepLogSet;
 
+HResult StepLogSet_InitByCount(StepLogSet* _set, const uint16_t _count);
+void StepLogSet_Release(StepLogSet* _set);
+
 
 // =============================================
 // DirIterItems

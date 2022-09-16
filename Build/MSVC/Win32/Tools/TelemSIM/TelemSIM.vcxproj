@@ -217,6 +217,7 @@ copy "$(VLD_ROOT)\bin\Win64\*.*" $(TargetDir)</Command>
     <ClInclude Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\PosixInterface.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\SQLite3_Helper\sqlite3_helper.h" />
+    <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TMLibConfig.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TM_PreLoad.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Config.h" />

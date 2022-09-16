@@ -176,6 +176,9 @@
     <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TM_PreLoad.h">
       <Filter>Code\Common\TMLib</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TMLibConfig.h">
+      <Filter>Code\Common\TMLib</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\..\..\..\..\Resource\Configuration\TelemSIM.xml">
