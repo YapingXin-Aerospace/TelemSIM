@@ -52,6 +52,9 @@
     <Filter Include="Code\Utility\App\SQLiteTools">
       <UniqueIdentifier>{b5353c65-121c-41b9-b989-ccbb6dfdaae6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\Utility\Func">
+      <UniqueIdentifier>{89b0dadb-4a2c-418c-b069-70c45eef46fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -110,6 +113,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Code\Common\TMLib\TM_PreLoad.c">
       <Filter>Code\Common\TMLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\Func\Func_PreLoad.c">
+      <Filter>Code\Utility\Func</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +184,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TMLibConfig.h">
       <Filter>Code\Common\TMLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\Func\Func_PreLoad.h">
+      <Filter>Code\Utility\Func</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

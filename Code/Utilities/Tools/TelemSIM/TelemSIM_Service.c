@@ -2,8 +2,9 @@
 #include "Common/LogInterface/log_interface.h"
 #include "TelemSIM_Service.h"
 #include "TelemSIM_Config.h"
+#include "Func/Func_PreLoad.h"
 
-#include "Common/IdSnowflake/snowflake.h"
+//#include "Common/IdSnowflake/snowflake.h"
 
 #include "App/SQLiteTools/DRV_Config.h"
 
@@ -51,8 +52,15 @@ HResult service_setup(int argc, char* argv[])
     LOGINFO("BIN: %s", config->TelemetrySourceDBFile);
     LOGINFO("*** Doing the pre-processing tasks ***");
 
-    uint64_t snid0 = next_id();
-    LOGINFO("SnowFlake Id0: 0x%llx", snid0);
+    /*uint64_t snid0 = next_id();
+    LOGINFO("SnowFlake Id0: 0x%llx", snid0);*/
+
+    retcode = UtilityPreload_Load();
+    if (retcode != HResult_OK)
+    {
+        LOGERROR("Load utility pre-load data failed.");
+        goto EXIT;
+    }
 
 EXIT:
     return retcode;
@@ -84,6 +92,8 @@ HResult service_stop()
 
 void service_cleanup()
 {
+    UtilityPreload_Release();
+
     LOGINFO("==================");
     LOGINFO("TelemSIM END!");
     LOGINFO("==================");
