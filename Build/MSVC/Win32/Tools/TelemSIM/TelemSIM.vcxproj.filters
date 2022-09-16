@@ -99,6 +99,9 @@
     <ClCompile Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_StepLog.c">
       <Filter>Code\Utility\App\SQLiteTools</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Common\TMLib\TM_PreLoad.c">
+      <Filter>Code\Common\TMLib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\Code\Common\datatypes.h">
@@ -157,6 +160,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_StepLog.h">
       <Filter>Code\Utility\App\SQLiteTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TM_PreLoad.h">
+      <Filter>Code\Common\TMLib</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

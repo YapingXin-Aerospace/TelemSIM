@@ -195,6 +195,7 @@ copy "$(VLD_ROOT)\bin\Win64\*.*" $(TargetDir)</Command>
     <ClCompile Include="..\..\..\..\..\Code\Common\Mini-XML\mxml-helper.c" />
     <ClCompile Include="..\..\..\..\..\Code\Common\SQLite3_Helper\sqlite3_helper.c" />
     <ClCompile Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.c" />
+    <ClCompile Include="..\..\..\..\..\Code\Common\TMLib\TM_PreLoad.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Config.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Internal.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_StepLog.c" />
@@ -217,6 +218,7 @@ copy "$(VLD_ROOT)\bin\Win64\*.*" $(TargetDir)</Command>
     <ClInclude Include="..\..\..\..\..\Code\Common\PosixInterface.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\SQLite3_Helper\sqlite3_helper.h" />
     <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.h" />
+    <ClInclude Include="..\..\..\..\..\Code\Common\TMLib\TM_PreLoad.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Config.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Internal.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_StepLog.h" />

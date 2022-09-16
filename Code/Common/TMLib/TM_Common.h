@@ -3,6 +3,29 @@
 
 #include "../datatypes.h"
 #include "../DS/RefString.h"
+#include "TMLibConfig.h"
+
+// =============================================
+// DirIterItems
+// =============================================
+
+typedef struct
+{
+    uint16_t StepId;
+    uint8_t  PhaseId;
+    uint8_t  ToSkip;
+    uint32_t RetCode;
+    char StepName[ShortNameTXT_MaxSIZE];
+    char Desp[DescriptionTxtMaxSIZE];
+
+} StepLogItem;
+
+typedef struct
+{
+    uint16_t count;
+    StepLogItem* items;
+
+} StepLogSet;
 
 
 // =============================================

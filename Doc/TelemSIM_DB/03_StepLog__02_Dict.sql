@@ -32,3 +32,4 @@ RetCode: 2  Completed Failed
 */
 
 INSERT INTO StepLog( StepId, PhaseId, StepName, Desp ) VALUES( 1001, 1, 'LoopTelemSrcFiles',    'Loop the *.dat files under the TelemetrySource directory.' );
+INSERT INTO StepLog( StepId, PhaseId, StepName, Desp ) VALUES( 1002, 1, 'CreateAndHashDataSet', 'Create DataSet and apply the hash values for DataSet and SrcFiles.' );
