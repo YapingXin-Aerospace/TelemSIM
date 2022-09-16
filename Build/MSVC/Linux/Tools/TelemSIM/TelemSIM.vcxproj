@@ -145,6 +145,7 @@
     <ClCompile Include="..\..\..\..\..\Code\Common\TMLib\TM_Common.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Config.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Internal.c" />
+    <ClCompile Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_StepLog.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Config.c" />
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Service.c" />
@@ -167,6 +168,7 @@
     <ClInclude Include="..\..\..\..\..\Code\LibDev\Mini-XML\include\mxml.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Config.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Internal.h" />
+    <ClInclude Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_StepLog.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Config.h" />
     <ClInclude Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM_Service.h" />
   </ItemGroup>
