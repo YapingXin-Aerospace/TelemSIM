@@ -37,6 +37,12 @@
     <Filter Include="Code\Common\IdSnowflake">
       <UniqueIdentifier>{89a0cf2f-4b72-4dcf-9e09-e95656be8b70}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\Utility\App">
+      <UniqueIdentifier>{408e579e-55be-45b9-bccd-f30888f2683e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Utility\App\SQLiteTools">
+      <UniqueIdentifier>{69a0f533-dab3-4b5d-8bcd-8440be412928}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Code\Utilities\Tools\TelemSIM\TelemSIM.c">
@@ -83,6 +89,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\Code\Common\IdSnowflake\snowflake.c">
       <Filter>Code\Common\IdSnowflake</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Config.c">
+      <Filter>Code\Utility\App\SQLiteTools</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +142,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\Code\Common\IdSnowflake\snowflake.h">
       <Filter>Code\Common\IdSnowflake</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\Utilities\App\SQLiteTools\DRV_Config.h">
+      <Filter>Code\Utility\App\SQLiteTools</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

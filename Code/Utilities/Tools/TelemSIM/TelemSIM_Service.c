@@ -5,6 +5,8 @@
 
 #include "Common/IdSnowflake/snowflake.h"
 
+#include "App/SQLiteTools/DRV_Config.h"
+
 #define HOSTNODE_CONFIGXMLFILE  "Resource/Configuration/TelemSIM.xml"
 
 
@@ -43,6 +45,11 @@ HResult service_setup(int argc, char* argv[])
     LOGINFO("TelemetrySource.Dir = %s", config->TelemetrySourceDir);
     LOGINFO("TelemetrySourceDB.File = %s", config->TelemetrySourceDBFile);
     LOGINFO("ResultDump.Dir = %s", config->ResultDumpFolder);
+
+    get_G_DRVConfig()->dbpath = config->TelemetrySourceDBFile;
+
+    LOGINFO("BIN: %s", config->TelemetrySourceDBFile);
+    LOGINFO("*** Doing the pre-processing tasks ***");
 
     uint64_t snid0 = next_id();
     LOGINFO("SnowFlake Id0: 0x%llx", snid0);
