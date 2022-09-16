@@ -207,13 +207,12 @@ HResult sqlite3_table_count(sqlite3* dbconn, const char* table_name, size_t* p_C
         goto EXIT;
     }
 
-    *p_Count = i64;
+    *p_Count = (size_t)i64;
 
 EXIT:
     memset(sqlbuf, 0, PATH_MAX * sizeof(char));
     return retcode;
 }
-
 
 
 HResult sqlite3_IdxSetInit_ApplyIdxById(sqlite3* dbconn, const char* table_name, IdxSet* set)
@@ -309,8 +308,7 @@ EXIT:
 HResult sqlite3_LoadIdxAuxSet(sqlite3* dbconn, const char* sql_Count, const char* sql_IdxAuxPair, IdxAuxSet* set)
 {
     HResult retcode = HResult_OK;
-    size_t name_length = 0;
-    
+    // size_t name_length = 0;
     int64_t i64 = 0;
 
     if (dbconn == NULL || set == NULL || sql_Count == NULL || 0 == strlen(sql_Count) || sql_IdxAuxPair == NULL || 0 == strlen(sql_IdxAuxPair))
