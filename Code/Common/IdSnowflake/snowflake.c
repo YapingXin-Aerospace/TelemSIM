@@ -1,83 +1,79 @@
 #include "snowflake.h"
 #include "../common_functions.h"
 
-static snowflake_st global_sf;
-static uint8_t is_global_sf_set = 0;
+#if ( defined _WIN32 )
+#include <windows.h>
+#include <share.h>
+#include <io.h>
+#include <fcntl.h>
+#elif ( defined __unix ) || ( defined _AIX ) || ( defined __linux__ ) || ( defined __hpux )
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/time.h>
+#include <syslog.h>
+#include <pthread.h>
+#endif
 
-static uint64_t snowflake_next_timestamp(uint64_t last_timestamp);
+// IdWorker Struct
+struct IdWorker {
+    int64_t worker_id;
+    int64_t last_time_stamp;
+    unsigned int sequence;
+};
 
-/* uint64_t snowflake_id(uint64_t *last_timestamp,int datacenter, int machine, int *seq) */
-uint64_t snowflake_id(snowflake_st *snowflake_st)
-{
-    uint64_t current_timestamp = snowflake_timestamp();
+typedef struct IdWorker id_worker;
 
-    if (current_timestamp == snowflake_st->last_timestamp)
-    {
-        snowflake_st->seq = (snowflake_st->seq + 1) & MAX_SEQ_NUM;
+// Reference: https://github.com/52fhy/snowflake-c
 
-        if (snowflake_st->seq == 0)
-        {
-            current_timestamp = snowflake_next_timestamp(snowflake_st->last_timestamp);
-        }
-    }
-    else
-    {
-        snowflake_st->seq = 0;
-    }
 
-    snowflake_st->last_timestamp = current_timestamp;
+//wait until the next millisecond, regenerate the timestamp 
+int64_t time_re_gen(int64_t last) {
+    struct timeval tv;
+    int64_t new_time;
 
-    return (current_timestamp - START_TIMESTAMP) << TIMESTAMP_LEFT_OFFSET | snowflake_st->datacenter << DATACENTER_LEFT_OFFSET | snowflake_st->machine << MACHINE_LEFT_OFFSET | snowflake_st->seq;
+    do {
+        gettimeofday(&tv, NULL);
+        new_time = (int64_t)tv.tv_sec * 1000 + (int64_t)tv.tv_usec / 1000;
+    } while (new_time <= last);
+
+    return new_time;
 }
 
-uint64_t snowflake_timestamp_id()
-{
-    if (is_global_sf_set == 0)
-    {
-        global_sf.last_timestamp = snowflake_timestamp();
-        global_sf.datacenter = 0x01010101;
-        global_sf.machine = 0x01010101;
-        global_sf.seq = 0;
-
-        is_global_sf_set = 1;
-    }
-
-    snowflake_st* sf = &global_sf;
-
-    uint64_t current_timestamp = snowflake_timestamp();
-    
-    if (current_timestamp == sf->last_timestamp)
-    {
-        sf->seq = (sf->seq + 1) & MAX_SEQ_NUM;
-
-        if (sf->seq == 0)
-        {
-            current_timestamp = snowflake_next_timestamp(sf->last_timestamp);
-        }
-    }
-    else
-    {
-        // sf->seq = 0;
-        sf->seq = (sf->seq + 1) & MAX_SEQ_NUM;
-    }
-
-    sf->last_timestamp = current_timestamp;
-
-    return (current_timestamp - START_TIMESTAMP) << TIMESTAMP_LEFT_OFFSET | (uint64_t)(sf->datacenter << DATACENTER_LEFT_OFFSET) | (uint64_t)(sf->machine << MACHINE_LEFT_OFFSET) | sf->seq;
-}
-
-uint64_t snowflake_timestamp() 
-{
+//get the current timestamp 
+int64_t time_gen() {
     struct timeval tv;
     gettimeofday(&tv, NULL);
-    return (uint64_t)tv.tv_sec * 1000 + (uint64_t)tv.tv_usec / 1000;
+    return (int64_t)tv.tv_sec * 1000 + (int64_t)tv.tv_usec / 1000;
 }
 
-static uint64_t snowflake_next_timestamp(uint64_t last_timestamp)
-{
-    uint64_t cur;
-    do {
-        cur = snowflake_timestamp();
-    } while (cur <= last_timestamp);
-    return cur;
+int64_t next_id() {
+    static id_worker iw = { 0,0,0 };
+
+    int64_t ts, id;
+    ts = time_gen();
+
+    //multiple IDs generated in the same millisecond
+    if (ts == (iw.last_time_stamp)) {
+        iw.sequence = (iw.sequence + 1) & MASK_SEQUENCE;
+
+        //The serial number in the same millisecond is used up, waiting until the next millisecond
+        if (iw.sequence == 0) {
+            ts = time_re_gen(ts);
+        }
+    }
+    else {
+        iw.last_time_stamp = ts;
+    }
+
+    //当前时间戳比上一次时间还小，说明出错了 
+    if (ts < (iw.last_time_stamp)) {
+        id = 0;
+    }
+    else {
+        id = (ts - EPOCH) << (NODEBITS + STEPBITS) |
+            iw.worker_id << STEPBITS |
+            iw.sequence;
+    }
+
+    return id;
 }

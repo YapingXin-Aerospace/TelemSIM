@@ -1,49 +1,23 @@
 #ifndef SNOWFLAKE_H
 #define SNOWFLAKE_H
 
-#include <stdio.h>
+#include "../datatypes.h"
 
-#if ( defined _WIN32 )
-#include <windows.h>
-#include <share.h>
-#include <io.h>
-#include <fcntl.h>
-#elif ( defined __unix ) || ( defined _AIX ) || ( defined __linux__ ) || ( defined __hpux )
-#include <unistd.h>
-#include <fcntl.h>
-#include <sys/time.h>
-#include <syslog.h>
-#include <pthread.h>
-#endif
 
-#include <stdint.h>
-#include <stdlib.h>
+//2^12 -1 = 4095
+#define MASK_SEQUENCE 4095
 
-#define START_TIMESTAMP 1497453478000
+// Epoch is set to the twitter snowflake epoch of Nov 04 2010 01:42:54 UTC in milliseconds
+#define EPOCH 1288834974657
 
-#define SEQ_BIT 12
-#define MACHINE_BIT 5
-#define DATACENTER_BIT 5
+// NodeBits holds the number of bits to use for Node
+#define NODEBITS 10
 
-#define MAX_DATACENTER_NUM ((1 << DATACENTER_BIT) - 1)
-#define MAX_MACHINE_NUM ((1 << MACHINE_BIT) - 1)
-#define MAX_SEQ_NUM ((1 << SEQ_BIT) - 1)
+// StepBits holds the number of bits to use for Step
+#define STEPBITS 12
 
-#define MACHINE_LEFT_OFFSET SEQ_BIT
-#define DATACENTER_LEFT_OFFSET (SEQ_BIT + MACHINE_BIT)
-#define TIMESTAMP_LEFT_OFFSET (DATACENTER_LEFT_OFFSET + DATACENTER_BIT)
+int64_t time_re_gen(int64_t);
+int64_t time_gen();
+int64_t next_id();
 
-//uint64_t snowflake_id();
-uint64_t snowflake_timestamp();
-
-typedef struct
-{
-    uint64_t last_timestamp;
-    int datacenter;
-    int machine;
-    int seq;
-} snowflake_st;
-
-uint64_t snowflake_timestamp_id();
-
-#endif
+#endif // !SNOWFLAKE_H
