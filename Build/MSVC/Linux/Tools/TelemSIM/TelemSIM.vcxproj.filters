@@ -198,8 +198,5 @@
     <None Include="..\..\..\..\..\Resource\Configuration\TelemSIM_logsconf_kvfile.conf">
       <Filter>Resource\Configuration</Filter>
     </None>
-    <None Include="..\..\..\..\..\Resource\DataCollation\TTC_TMSRC_DS_V01.00.00.00_d220915T0944.bin">
-      <Filter>Resource\DataCollation</Filter>
-    </None>
   </ItemGroup>
 </Project>
